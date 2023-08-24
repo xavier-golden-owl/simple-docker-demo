@@ -59,14 +59,14 @@ parameters:
 ### 1. cannot start django server
 1. Navigate to compose.yml file
 2. Change port mapping to your web service
-```yml
+```yaml
 services:
-	web:
-		...
-		ports:
-			- <available_port>:8000
-	db:
-		...
+  web:
+    ...
+    ports:
+      - <available_port>:8000
+  db:
+    ...
 ```
 
 change <available_port> to any port that available in your host machine
@@ -74,14 +74,14 @@ change <available_port> to any port that available in your host machine
 ### 1. cannot connect to postgres database
 1. Navigate to compose.yml file
 2. Add port mapping to your db service
-```yml
+```yaml
 services:
-	web:
-		...
-	db:
-		...
-		ports:
-			- <available_port>:5432
+  web:
+    ...
+  db:
+    ...
+    ports:
+      - <available_port>:5432
 ```
 
 change <available_port> to any port that available in your host machine
